@@ -1,7 +1,11 @@
-import "./ButtonBox.css";
+import "./Button.css";
 
-const ButtonBox = ({ children }) => {
-    return <div className="buttonBox">{children}</div>;
+const Button = ({ className, value, onClick }) => {
+    return (
+        <button className={className} onClick={onClick}>
+            {value}
+        </button>
+    );
 };
 
-export default ButtonBox;
+export default Button;
